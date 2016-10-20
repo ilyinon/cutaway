@@ -14,7 +14,7 @@ from werkzeug.utils import secure_filename
 import uuid
 import os
 
-from cutaway import app
+from kpotolkam import app
 
 
 
