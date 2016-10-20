@@ -33,7 +33,7 @@ def show_models():
 #             join(District, Model.district ==  District.id).\
 #             join(Image, Model.id == Image.model_id).group_by(Model.id).limit(5).all()
 
-  return render_template('main_page.html', models=userList)
+  return render_template('main_page.html')
 
 #@app.route('/add', methods=['POST'])
 #def add_model():

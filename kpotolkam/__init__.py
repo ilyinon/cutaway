@@ -3,7 +3,7 @@ import os
 import json
 from flask import Flask, request, session, g, redirect, url_for, abort, \
   render_template, flash, jsonify, send_from_directory
-from  sqlalchemy import *
+#from  sqlalchemy import *
 import config
 
 

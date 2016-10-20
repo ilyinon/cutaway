@@ -7,7 +7,7 @@ class Config(object):
   SECRET_KEY='35455450a60b0ed766efb716b1aea023'
   USERNAME='admin'
   PASSWORD='default'
-  HOST='127.0.0.1'
+  HOST='0.0.0.0'
   PORT=8010
 
 class DevConfig(Config):
