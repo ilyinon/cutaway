@@ -9,8 +9,7 @@ class Config(object):
   PASSWORD='default'
   HOST='0.0.0.0'
   PORT=8010
+  DB_URI = '"mysql://kpotolkam:kpotolkam@localhost/kpotolkam?charset=utf8", pool_recycle=3600'
 
 class DevConfig(Config):
   ENV='Development'
-  db_uri = 'sqlite:///' + os.path.join(basedir, 'cutaway.db')
-  SQLALCHEMY_MIGRATE_REPO = os.path.join(basedir, 'db_repository')

@@ -27,27 +27,35 @@ def allowed_file(filename):
 
 
 @app.route('/')
-def show_models():
+def index():
 
 #  userList = db_session.query(Model.id, Model.name, Model.age, District.name, Image.filename).\
 #             join(District, Model.district ==  District.id).\
 #             join(Image, Model.id == Image.model_id).group_by(Model.id).limit(5).all()
 
-  return render_template('main_page.html')
+  return render_template('index.html')
 
-#@app.route('/add', methods=['POST'])
-#def add_model():
-#  if not session.get('logged_in'):
-#    abort(401)
+@app.route('/contact')
+def contact():
+  return render_template('contact.html')
 
-#  new_model = Model(name     = request.form['name'], 
-#                    age      = request.form['age'],
-#                    district = request.form['district'] 
-#  )
-#  db_session.add(new_model)
-#  db_session.commit()
-#
-#  flash('New model was successfully posted')
-#  return redirect(url_for('show_models'))
+@app.route('/ceiling')
+def ceiling():
+  return render_template('ceiling.html')
 
+@app.route('/gallery')
+def gallery():
+  return render_template('gallery.html')
+
+@app.route('/price')
+def price():
+  return render_template('price.html')
+
+@app.route('/faq')
+def faq():
+  return render_template('faq.html')
+
+@app.route('/options')
+def options():
+  return render_template('options.html')
 
