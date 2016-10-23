@@ -59,3 +59,8 @@ def faq():
 def options():
   return render_template('options.html')
 
+@app.route('/spot')
+def spot():
+  return render_template('spot.html')
+
+

@@ -2,10 +2,10 @@
 <title>Потолки Нижний Новгород</title>
 <link rel=stylesheet type=text/css href="{{ url_for('static', filename='style.css') }}">
 <div class=page>
-  <h1><a href="{{ url_for('index') }}">Потолки</a></h1>
+  <h1><a href="{{ url_for('index') }}"><img src="images/main_image.png" alt="Натяжные потолки. Нижний Новгород" style="width:70%;height:100px;"></a><a href="{{ url_for('contact') }}"><img src="images/main_text.png" alt="Натяжные потолки. Нижний Новгород" style="width:30%;height:100px;"></a></h1>
   <div class=metanav>
   </div>
-<table align="right" border=1>
+<table align="right" style=.entries>
   <tr>
    <td><a href="{{ url_for('index') }}">Главная</a></td>
   </tr>
@@ -17,11 +17,22 @@
     <td><a href="{{ url_for('price') }}">Цены</a></td>
   </tr>
   <tr>
-    <td><a href="{{ url_for('contact') }}">Контакты</a></td>
-  </tr>
-  <tr>
     <td><a href="{{ url_for('faq') }}">Вопросы</a></td>
   </tr>
+  <tr>
+    <td><a href="{{ url_for('gallery') }}">Примеры работ</a></td>
+  </tr>
+  <tr>
+    <td><a href="{{ url_for('options') }}">Особые потолки</a></td>
+  </tr>
+  <tr>
+    <td><a href="{{ url_for('spot') }}">Споты</a></td>
+  </tr>
+  <tr>
+    <td><a href="{{ url_for('contact') }}">Контакты</a></td>
+  </tr>
+
+
 </table>
 
 
