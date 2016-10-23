@@ -63,4 +63,7 @@ def options():
 def spot():
   return render_template('spot.html')
 
+@app.errorhandler(404)
+def page_not_found(e):
+  return redirect(url_for('index'))
 
