@@ -8,7 +8,7 @@ class Config(object):
   USERNAME='admin'
   PASSWORD='default'
   HOST='0.0.0.0'
-  PORT=8010
+  PORT=80
   DB_URI = '"mysql://kpotolkam:kpotolkam@localhost/kpotolkam?charset=utf8", pool_recycle=3600'
 
 class DevConfig(Config):
