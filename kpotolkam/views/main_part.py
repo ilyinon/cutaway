@@ -9,6 +9,8 @@ from werkzeug.utils import secure_filename
 #Session = sessionmaker(bind=engine)
 
 #db_session = Session()
+from flask_mail import Mail, Message
+
 
 
 import uuid
@@ -35,7 +37,7 @@ def index():
 
   return render_template('index.html')
 
-@app.route('/contact')
+@app.route('/contact', methods=('GET', 'POST'))
 def contact():
   return render_template('contact.html')
 
