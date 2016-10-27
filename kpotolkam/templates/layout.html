@@ -1,39 +1,26 @@
 <!doctype html>
 <title>Потолки Нижний Новгород</title>
+
+
 <link rel=stylesheet type=text/css href="{{ url_for('static', filename='style.css') }}">
 <div class=page>
-  <h1><a href="{{ url_for('index') }}"><img src="images/main_image.png" alt="Натяжные потолки. Нижний Новгород" style="width:70%;height:100px;"></a><a href="{{ url_for('contact') }}"><img src="images/main_text.png" alt="Натяжные потолки. Нижний Новгород" style="width:30%;height:100px;"></a></h1>
-  <div class=metanav>
-  </div>
-<table align="right" style=.entries>
+<a href="{{ url_for('contact') }}"><img src="images/main_text.png" alt="Натяжные потолки. Нижний Новгород" style="width:30%;height:100px;"></a>
+<div class=.entries>
+<div class=.mainmenu>
+<table align="right" style=.entries width=100%>
   <tr>
-   <td><a href="{{ url_for('index') }}">Главная</a></td>
+   <td><a href="{{ url_for('index') }} style="text-decoration: none !important; color: green;" ><span style="font-size: 2em;">Главная</span></a></td>
+   <td><a href="{{ url_for('gallery') }}"><span style="font-size: 2em">Примеры работ</span></a></td>
+   <td><a href="{{ url_for('price') }}"><span style="font-size: 2em">Цены</span></a></td>
+   <td><a href="{{ url_for('contact') }}"><span style="font-size: 2em">Контакты</span></a></td>
+   <td><a href="{{ url_for('ceiling') }}"><span style="font-size: 2em">Отзывы</span></a></td>
+   <td><a href="{{ url_for('faq') }}"><span style="font-size: 2em">Вопрос-ответ</span></a></td>
   </tr>
-  <tr>
-  <tr>
-   <td><a href="{{ url_for('ceiling') }}">Потолки</a></td>
-  </tr>
-  <tr>
-    <td><a href="{{ url_for('price') }}">Цены</a></td>
-  </tr>
-  <tr>
-    <td><a href="{{ url_for('faq') }}">Вопросы</a></td>
-  </tr>
-  <tr>
-    <td><a href="{{ url_for('gallery') }}">Примеры работ</a></td>
-  </tr>
-  <tr>
-    <td><a href="{{ url_for('options') }}">Особые потолки</a></td>
-  </tr>
-  <tr>
-    <td><a href="{{ url_for('spot') }}">Освещение</a></td>
-  </tr>
-  <tr>
-    <td><a href="{{ url_for('contact') }}">Контакты</a></td>
-  </tr>
-
-
 </table>
+</dev>
+</div>
+
+  <h1><a href="{{ url_for('index') }}"><img src="images/main_image.png" alt="Натяжные потолки. Нижний Новгород" style="width:100%;height:200px;"></a></h1>
 
 
   {% for message in get_flashed_messages() %}
@@ -41,4 +28,3 @@
   {% endfor %}
   {% block body %}{% endblock %}
 </div>
-

@@ -37,31 +37,31 @@ def index():
 
   return render_template('index.html')
 
-@app.route('/contact', methods=('GET', 'POST'))
+@app.route('/contact.html', methods=('GET', 'POST'))
 def contact():
   return render_template('contact.html')
 
-@app.route('/ceiling')
+@app.route('/ceiling.html')
 def ceiling():
   return render_template('ceiling.html')
 
-@app.route('/gallery')
+@app.route('/gallery.html')
 def gallery():
   return render_template('gallery.html')
 
-@app.route('/price')
+@app.route('/price.html')
 def price():
   return render_template('price.html')
 
-@app.route('/faq')
+@app.route('/faq.html')
 def faq():
   return render_template('faq.html')
 
-@app.route('/options')
+@app.route('/options.html')
 def options():
   return render_template('options.html')
 
-@app.route('/spot')
+@app.route('/spot.html')
 def spot():
   return render_template('spot.html')
 
