@@ -1,20 +1,24 @@
-<!doctype html>
+﻿<!doctype html>
+<script type="text/javascript" src="static/js/prototype.js"></script>
+<script type="text/javascript" src="static/js/scriptaculous.js?load=effects"></script>
+<script type="text/javascript" src="static/js/lightbox.js"></script>
+<link rel="stylesheet" href="static/css/lightbox.css" type="text/css" media="screen" />
 <title>Потолки Нижний Новгород</title>
-
 
 <link rel=stylesheet type=text/css href="{{ url_for('static', filename='style.css') }}">
 <div class=page>
-<a href="{{ url_for('contact') }}"><img src="images/main_text.png" alt="Натяжные потолки. Нижний Новгород" style="width:30%;height:100px;"></a>
 <div class=.entries>
 <div class=.mainmenu>
+<h1>&emsp;&emsp;&emsp;&emsp;&emsp;<a href="{{ url_for('index') }}"><span><img src="images/main_text1.png"style="width:300px%;height:50px;">&emsp;&emsp;&emsp;
+<img src="images/main_text2.png"style="width:150px%;height:50px;"</span></a></h1>
 <table align="right" style=.entries width=100%>
   <tr>
    <td><a href="{{ url_for('index') }} style="text-decoration: none !important; color: green;" ><span style="font-size: 2em;">Главная</span></a></td>
-   <td><a href="{{ url_for('gallery') }}"><span style="font-size: 2em">Примеры работ</span></a></td>
-   <td><a href="{{ url_for('price') }}"><span style="font-size: 2em">Цены</span></a></td>
-   <td><a href="{{ url_for('contact') }}"><span style="font-size: 2em">Контакты</span></a></td>
-   <td><a href="{{ url_for('ceiling') }}"><span style="font-size: 2em">Отзывы</span></a></td>
-   <td><a href="{{ url_for('faq') }}"><span style="font-size: 2em">Вопрос-ответ</span></a></td>
+   <td><a href="{{ url_for('gallery') }}"><span style="font-size: 2em;">Примеры работ</span></a></td> 
+   <td><a href="{{ url_for('faq') }}"><span style="font-size: 2em;">Вопрос-ответ</span></a></td>
+   <td><a href="{{ url_for('price') }}"><span style="font-size: 2em;">Цены</span></a></td>
+   <td><a href="{{ url_for('ceiling') }}"><span style="font-size: 2em;">Отзывы</span></a></td>
+   <td><a href="{{ url_for('contact') }}"><span style="font-size: 2em;">Контакты</span></a></td>
   </tr>
 </table>
 </dev>
@@ -26,5 +30,5 @@
   {% for message in get_flashed_messages() %}
     <div class=flash>{{ message }}</div>
   {% endfor %}
-  {% block body %}{% endblock %}
+  {% block body %} <body background="#B0E2FF">{% endblock %}
 </div>

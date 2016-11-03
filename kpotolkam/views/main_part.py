@@ -39,6 +39,10 @@ def index():
 
 @app.route('/contact.html', methods=('GET', 'POST'))
 def contact():
+
+  msg = Message('Hello', 
+               sender='test@mail.ru',
+               recipients=["app.config['ADMIN_MAIL']"])
   return render_template('contact.html')
 
 @app.route('/ceiling.html')

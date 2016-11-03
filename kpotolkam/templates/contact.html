@@ -1,12 +1,13 @@
-{% extends "layout.html" %}
+﻿{% extends "layout.html" %}
 {% block body %}
 <ul><ul>
-Мы ответим на интересующие Вас вопросы по телефону <b>8(908) 239-13-19</b><br><br> или напишите нам:<br>
+Мы ответим на интересующие Вас вопросы по телефону <b>8(908) 239-13-19</b><br><br> или напишите нам на электронную почту: natyaznyepotolki@yandex.ru <br><br> или заполните следующую форму:<br>
 <form action="your_method_name" method="post" align=top>
     <input type="text" name="customer_name" placeholder="Имя" cols=30 ><br>
     <input type="text" name="phone_number" placeholder="Номер телефона" cols=30><br>
+    <input type="text" name="customer_email" placeholder="Email" cols=30><br>
     <textarea name="text_question" rows=5 cols=30 align="top" placeholder="Ваш вопрос"></textarea><br>
-    <input type="submit" value="Задать вопрос">
+    <input type="submit" value="Отправить">
 </form>
 
 {% include "footer.html" %}
